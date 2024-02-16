@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+/*import du font depuis google font*/
+* {
+    box-sizing: border-box;
+    /* box-sizing est appliqué à tous les éléments */
+    font-family: $Text;
+}
+h1, h2, h3 {
+    font-family: $Logo_title;
+}
