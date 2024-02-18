@@ -1,6 +1,16 @@
 .navbar {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
     align-items: center;
-    justify-content: center;
     height: 63px;
+    .back {
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+        align-items: center;
+    }
+    #logo {
+        grid-column: 3;
+        justify-self: center;
+    }
 }

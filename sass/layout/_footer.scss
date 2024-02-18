@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    padding-block: 10px;
+    padding-inline: 20px;
+    background-color: #353535;
+
+    img {
+        margin-top: 12px;
+        height: 20px;
+        width: 100px;
+        filter: invert(1);
+    }
+
+    ul {
+        padding-inline-start: 0px;
+        list-style-type: none;
+
+        li {
+            padding-block: 5px;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
+            i {
+                padding-right: 10px;
+            }
+        }
+    }
+}
