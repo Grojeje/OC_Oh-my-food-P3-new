@@ -1,7 +1,12 @@
+main {
+    margin-inline: 10px;
+}
+
 /*--------------------Header_menu--------------*/
 
-.headerimg {
-    object-fit: cover;
-    height: 275px;
-    width: 300px;
+header {
+    img {
+        width: 100%;
+    }
+    
 }

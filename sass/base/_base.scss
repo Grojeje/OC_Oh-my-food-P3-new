@@ -6,6 +6,7 @@
     /* box-sizing est appliqué à tous les éléments */
     font-family: $Text;
 }
-h1, h2, h3 {
+h1, h2 {
     font-family: $Logo_title;
+    font-style: italic;
 }
