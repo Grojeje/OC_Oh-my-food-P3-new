@@ -96,27 +96,31 @@ h2 {
                 font-size: 17px;
                 margin: 0;
             }
-            .heart_rate {
-                display: flex;
-                position: relative;
-                justify-content: flex-end;
-                width: 25px;
-                i {
-                    font-size: 25px;
-                }
-                .fa-regular {
-                    position: relative;
-                }
-                .fa-solid {
-                    position: absolute;
-                    opacity: 0;
-                    transition: all 150ms linear;
-                }
-                .fa-solid:active {
-                    opacity: 1;
-                    color: $colorPrimary;
-                }
-            }
+    }
+}
+.heart_rate {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    width: 25px;
+
+    i {
+        font-size: 25px;
+    }
+
+    .fa-regular {
+        position: relative;
+    }
+
+    .fa-solid {
+        position: absolute;
+        opacity: 0;
+        transition: all 150ms linear;
+    }
+
+    .fa-solid:active {
+        opacity: 1;
+        color: $colorPrimary;
     }
 }
 
@@ -161,16 +165,19 @@ h2 {
         position: relative;
         width: 59px;
         height: 100%;
-        left: 350px;
+        right: -350px;
         border-radius: 0px 15px 15px 0px;
-        background: #99E2D0;
+        background: $Greenlight;
+        transition: transform 250ms;
         span {
             @include disflexcenter;
             width: 20px;
             height: 20px;
+            border-radius: 50px;
+            background-color: $colorGroundPrimary;
             i {
                 border-radius: 50px;
-                color: white;
+                color: $Greenlight;
             }
         }
         
