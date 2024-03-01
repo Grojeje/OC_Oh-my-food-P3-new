@@ -4,10 +4,8 @@
     align-items: center;
     height: 63px;
     .back {
-        display: flex;
-        justify-content: center;
+        @include disflexcenter;
         justify-self: center;
-        align-items: center;
     }
     #logo {
         grid-column: 3;

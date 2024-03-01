@@ -1,49 +1,176 @@
 <!DOCTYPE html>
-<html lang=fr>
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <title>Ohmyfood</title>
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <span class="back">
-                <i class="fa-solid fa-arrow-left"></i>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+        <title>Ohmyfood</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <span class="back"
+                    ><a href="index.html"><i class="fa-solid fa-arrow-left"></i></a
+                ></span>
+                <span id="logo">
+                    <img class="logo" src="images/logo/ohmyfood@2x.svg" alt="ALC" />
+                </span>
+            </nav>
+        </header>
+        <main>
+            <img class="background" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="ALC" />
+            <h3 class="wrapper">
+                La palette du goût
+                <span class="heart_rate">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </span>
+            </h3>
+            <article class="art_menu wrapper">
+                <h4>ENTRÉES</h4>
+                <button class="menu" type="button" onclick="window.location.href = ' '">
+                    <span class="card">
+                        <strong class="card_title">Tartare de thon</strong>
+                        <em class="card_description">Assaisonné au yuzu</em>
+                    </span>
+                    <strong class="price">25€</strong>
+                    <span class="check">
+                        <span>
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+                    </span>
+                </button>
+                <button class="menu" type="button" onclick="window.location.href = ' '">
+                    <span class="card">
+                        <strong class="card_title">Bouchée de homard croustillant</strong>
+                        <em class="card_description">Et sa farandole de petits légumes</em>
+                    </span>
+                    <strong class="price">35€</strong>
+                    <span class="check">
+                        <span>
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+                    </span>
+                </button>
+                <button class="menu" type="button" onclick="window.location.href = ' '">
+                    <span class="card">
+                        <strong class="card_title">Poulet rôti aux herbes de Provence</strong>
+                        <em class="card_description">Et sa crème de truffe</em>
+                    </span>
+                    <strong class="price">40€</strong>
+                    <span class="check">
+                        <span>
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+                    </span>
+                </button>
+            </article>
+            <article class="art_menu wrapper">
+                <h4>PLATS</h4>
+                <button class="menu" type="button" onclick="window.location.href = ' '">
+                    <span class="card">
+                        <strong class="card_title">Poulet rôti aux herbes de Provence</strong>
+                        <em class="card_description">Et sa crème de truffe</em>
+                    </span>
+                    <strong class="price">40€</strong>
+                    <span class="check">
+                        <span>
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+                    </span>
+                </button>
+                <button class="menu" type="button" onclick="window.location.href = ' '">
+                    <span class="card">
+                        <strong class="card_title">Langouste rôtie</strong>
+                        <em class="card_description">Et ses légumes de saison</em>
+                    </span>
+                    <strong class="price">35€</strong>
+                    <span class="check">
+                        <span>
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+                    </span>
+                </button>
+                <button class="menu" type="button" onclick="window.location.href = ' '">
+                    <span class="card">
+                        <strong class="card_title">Côte de bœuf Angus</strong>
+                        <em class="card_description">Et sa purée de panais</em>
+                    </span>
+                    <strong class="price">44€</strong>
+                    <span class="check">
+                        <span>
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+                    </span>
+                </button>
+            </article>
+            <article class="art_menu wrapper">
+                <h4>DESSERTS</h4>
+                <button class="menu" type="button" onclick="window.location.href = ' '">
+                    <span class="card">
+                        <strong class="card_title">Farandole de desserts</strong>
+                        <em class="card_description">Du chef</em>
+                    </span>
+                    <strong class="price">18€</strong>
+                    <span class="check">
+                        <span>
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+                    </span>
+                </button>
+                <button class="menu" type="button" onclick="window.location.href = ' '">
+                    <span class="card">
+                        <strong class="card_title">Crème brulée</strong>
+                        <em class="card_description">Revisitée</em>
+                    </span>
+                    <strong class="price">22€</strong>
+                    <span class="check">
+                        <span>
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+                    </span>
+                </button>
+                <button class="menu" type="button" onclick="window.location.href = ' '">
+                    <span class="card">
+                        <strong class="card_title">Tiramisu</strong>
+                        <em class="card_description">À la noisette</em>
+                    </span>
+                    <strong class="price">23€</strong>
+                    <span class="check">
+                        <span>
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+                    </span>
+                </button>
+            </article>
+            <div class="cmd_btn">
+                <button class="home_btn" type="button" onclick="window.location.href = ' '">
+                    <span>Commander</span>
+                </button>
+            </div>
+        </main>
+        <footer>
+            <span>
+                <img src="images/logo/ohmyfood@2x.svg" alt="ALC" />
             </span>
-            <span id="logo">
-                <img class="logo" src="images/logo/ohmyfood@2x.svg" alt="ALC" />
-            </span>
-        </nav>
-        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="ALC" />
-    </header>
-    <main></main>
-    <footer>
-        <span>
-            <img src="images/logo/ohmyfood@2x.svg" alt="ALC" />
-        </span>
-        <ul>
-            <li>
-                <a href=""><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
-            </li>
-            <li>
-                <a href=""><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
-            </li>
-            <li><a href="">Mentions légales</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </footer>
-</body>
+            <ul>
+                <li>
+                    <a href=""><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+                </li>
+                <li><a href="">Mentions légales</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </footer>
+    </body>
 </html>

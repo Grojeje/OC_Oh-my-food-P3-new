@@ -1,0 +1,25 @@
+.wrapper {
+    padding-inline: 10px;
+}
+
+/*--------------------Header_menu--------------*/
+
+.background {
+        width: 100%;
+}
+
+/*--------------------Main_menu--------------*/
+
+.art_menu {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/*--------------------CMD_BTN--------------*/
+
+.cmd_btn {
+    margin-block: 50px;
+    @include disflexcenter;
+}

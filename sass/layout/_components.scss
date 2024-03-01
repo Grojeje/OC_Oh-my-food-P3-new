@@ -103,6 +103,8 @@ h2 {
     position: relative;
     justify-content: flex-end;
     width: 25px;
+    align-items: center;
+    padding-right: 20px;
 
     i {
         font-size: 25px;
@@ -126,12 +128,42 @@ h2 {
 
 /*-----------------menu------------------*/
 
+h3 {
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-block: 0;
+    padding-top: 30px;
+    position: relative;
+    margin-top: -30px;
+    background: #F6F6F6;
+    font-size: 28px;
+}
+h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    position: relative;
+    padding-bottom: 10px;
+}
+h4::before {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    content: "";
+} 
+h4::before {
+    left: 0;
+    bottom: 0;
+    border-bottom: solid 3px $Greenlight;
+}
 .menu {
     display: flex;
     border-radius: 15px;
     border: none;
-    width: 100%;
-    height: 72px;
+    width: 350px;
+    height: 69px;
     align-items: center;
     box-shadow:  0px 4px 15px 0px #000000;
     padding-inline: 15px;
@@ -148,9 +180,11 @@ h2 {
         font-size: 15px;
         .card_title {
                 font-size: 18px;
+                overflow: hidden;
             }
         .card_description {
             font-style: normal;
+            overflow: hidden
         }
     }
     .price {
@@ -158,14 +192,14 @@ h2 {
         display: flex;
         align-items: flex-end;
         height: 42px;
-        right: -35px;
+        padding-inline: 10px
     }
     .check {
         @include disflexcenter;
         position: relative;
         width: 59px;
         height: 100%;
-        right: -350px;
+        margin-right: -70px;
         border-radius: 0px 15px 15px 0px;
         background: $Greenlight;
         transition: transform 250ms;
