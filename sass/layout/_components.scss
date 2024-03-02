@@ -194,6 +194,11 @@ h4::before {
         height: 42px;
         padding-inline: 10px
     }
+    &:focus, &:active {
+        .check {
+            margin-right: 0;
+        }
+    }
     .check {
         @include disflexcenter;
         position: relative;
