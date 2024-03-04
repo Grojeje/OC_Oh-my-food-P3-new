@@ -26,3 +26,10 @@ $Logo_title : Shrikhand, sans-serif;
     justify-content: center;
     align-items: center;
 }
+@mixin textellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 200px;
+    text-align: start;
+}
