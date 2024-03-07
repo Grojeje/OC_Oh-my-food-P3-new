@@ -73,7 +73,7 @@ h2 {
 /*-------------------------Articles--------------------*/
 
 .article {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     height: 250px;
     border-radius: 15px;
     box-shadow: 4px 4px 4px 4px $colorBoxshadowPrimary;
@@ -92,14 +92,14 @@ h2 {
         .art_txt {
             padding-top: 10px;
         }
-            .art_title {
-                font-size: 18px;
-                font-weight: 700;
-            }
-            p {
-                font-size: 17px;
-                margin: 0;
-            }
+        .art_title {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        p {
+            font-size: 17px;
+            margin: 0;
+        }
     }
 }
 .heart_rate {
@@ -123,8 +123,9 @@ h2 {
         opacity: 0;
         transition: all 150ms linear;
     }
-
-    .fa-solid:active {
+}
+.like_check:checked + label {
+    .fa-solid {
         opacity: 1;
         color: $colorPrimary;
     }
@@ -141,7 +142,7 @@ h3 {
     padding-top: 30px;
     position: relative;
     margin-top: -30px;
-    background: #F6F6F6;
+    background: #f6f6f6;
     font-size: 28px;
 }
 h4 {
@@ -156,13 +157,13 @@ h4::before {
     width: 40px;
     height: 2px;
     content: "";
-} 
+}
 h4::before {
     left: 0;
     bottom: 0;
     border-bottom: solid 3px $Greenlight;
 }
-.menu_choice {
+.input_checkbox {
     display: none;
 }
 .menu {
@@ -171,7 +172,7 @@ h4::before {
     border: none;
     height: 69px;
     align-items: center;
-    box-shadow:  0px 4px 15px 0px #000000;
+    box-shadow: 0px 4px 15px 0px #000000;
     padding-inline: 15px;
     padding-block: 0;
     justify-content: space-between;
@@ -193,42 +194,41 @@ h4::before {
             @include textellipsis;
         }
     }
-    .price {
-        display: flex;
-        align-items: flex-end;
-        height: 42px;
-        padding-inline: 10px;
-        transition: transform 250ms;
-        margin-left: 80px;
-    }
-    .check {
-        @include disflexcenter;
+    .price_check {
         position: relative;
-        width: 60px;
-        height: 100%;
-        margin-right: -75px;
-        border-radius: 0px 15px 15px 0px;
-        background: $Greenlight;
+        display: flex;
+        align-items: center;
         transition: transform 250ms;
-        span {
+        .price {
+            display: flex;
+            align-items: flex-end;
+            height: 42px;
+            padding-inline: 10px;
+            transition: transform 250ms;
+        }
+        .check {
             @include disflexcenter;
-            width: 20px;
-            height: 20px;
-            border-radius: 50px;
-            background-color: $colorGroundPrimary;
+            position: relative;
+            width: 60px;
+            height: 70px;
+            margin-right: -75px;
+            background: $Greenlight;
+            transition: transform 250ms;
             i {
-                border-radius: 50px;
-                color: $Greenlight;
+                font-size: 20px;
+                color: white;
             }
         }
     }
 }
 .menu_choice:checked + label {
-    .price {
-        transform: translateX(-60px);
+    .card_title {
+        width: 200px;
     }
-
-    .check {
+    .card_description {
+        width: 200px;
+    }
+    .price_check {
         transform: translateX(-60px);
     }
 }
