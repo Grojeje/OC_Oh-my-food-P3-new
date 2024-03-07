@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
     <title>Ohmyfood</title>
 </head>
-
 <body>
     <header>
         <nav class="navbar">
@@ -28,9 +27,11 @@
         </nav>
     </header>
     <main>
-        <img class="background" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="ALC" />
+        <div class="background">
+            <img class="background_img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="ALC" />
+        </div>
         <h3 class="wrapper">
-            Le délice des sens
+            À la française
             <input class="like_check input_checkbox" type="checkbox" id="like" name="like" value="like" />
             <label for="like">
                 <span class="heart_rate">
@@ -45,8 +46,8 @@
             <label for="choice_1">
                 <span class="menu">
                     <span class="card">
-                        <strong class="card_title">Ravioles de foie gras</strong>
-                        <em class="card_description">Accompagnées de leur crème à la truffe</em>
+                        <strong class="card_title">Tartare de poulpe acidulé</strong>
+                        <em class="card_description">Aux zestes d'orange</em>
                     </span>
                     <span class="price_check">
                         <strong class="price">25€</strong>
@@ -60,8 +61,8 @@
             <label for="choice_2">
                 <span class="menu">
                     <span class="card">
-                        <strong class="card_title">Caviar osciètre</strong>
-                        <em class="card_description">Sur blini à la farine de blé noir</em>
+                        <strong class="card_title">Velouté de légumes d'antan</strong>
+                        <em class="card_description">Carotte, panais, topinambour</em>
                     </span>
                     <span class="price_check">
                         <strong class="price">35€</strong>
@@ -75,8 +76,8 @@
             <label for="choice_3">
                 <span class="menu">
                     <span class="card">
-                        <strong class="card_title">Homard et espuma de potiron</strong>
-                        <em class="card_description">Marinés aux zestes d'orange</em>
+                        <strong class="card_title">Soupe à l'oignon</strong>
+                        <em class="card_description">Revisitée</em>
                     </span>
                     <span class="price_check">
                         <strong class="price">20€</strong>
@@ -86,33 +87,33 @@
                     </span>
                 </span>
             </label>
+        </article>
+        <article class="art_menu wrapper">
+            <h4>PLATS</h4>
             <input class="menu_choice input_checkbox" type="checkbox" id="choice_4" name="choice" value="entrees" />
             <label for="choice_4">
                 <span class="menu">
                     <span class="card">
-                        <strong class="card_title">Foie gras de canard cuit entier</strong>
-                        <em class="card_description">Confiture de figue et pain toasté</em>
+                        <strong class="card_title">Coquilles Saint-Jacques</strong>
+                        <em class="card_description">Accompagnées d'une purée de panais</em>
                     </span>
                     <span class="price_check">
-                        <strong class="price">35€</strong>
+                        <strong class="price">40€</strong>
                         <span class="check">
                             <i class="fa-solid fa-circle-check"></i>
                         </span>
                     </span>
                 </span>
             </label>
-        </article>
-        <article class="art_menu wrapper">
-            <h4>PLATS</h4>
             <input class="menu_choice input_checkbox" type="checkbox" id="choice_5" name="choice" value="entrees" />
             <label for="choice_5">
                 <span class="menu">
                     <span class="card">
-                        <strong class="card_title">Noix de coquilles Saint-Jacques</strong>
-                        <em class="card_description">Sur lit de purée de céleri-rave</em>
+                        <strong class="card_title">Magret de canard</strong>
+                        <em class="card_description">Et parmentier de pommes de terre</em>
                     </span>
                     <span class="price_check">
-                        <strong class="price">40€</strong>
+                        <strong class="price">35€</strong>
                         <span class="check">
                             <i class="fa-solid fa-circle-check"></i>
                         </span>
@@ -123,26 +124,11 @@
             <label for="choice_6">
                 <span class="menu">
                     <span class="card">
-                        <strong class="card_title">Langoustine poêlée</strong>
-                        <em class="card_description">Purée de patate douce</em>
+                        <strong class="card_title">Pigeonneau d’Ille-et-Vilaine</strong>
+                        <em class="card_description">Sur son lit de gnocchis aux légumes</em>
                     </span>
                     <span class="price_check">
-                        <strong class="price">35€</strong>
-                        <span class="check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span>
-                    </span>
-                </span>
-            </label>
-            <input class="menu_choice input_checkbox" type="checkbox" id="choice_7" name="choice" value="entrees" />
-            <label for="choice_7">
-                <span class="menu">
-                    <span class="card">
-                        <strong class="card_title">Mijoté de queue de bœuf</strong>
-                        <em class="card_description">Et riz sauvage aux zestes de citron</em>
-                    </span>
-                    <span class="price_check">
-                        <strong class="price">45€</strong>
+                        <strong class="price">44€</strong>
                         <span class="check">
                             <i class="fa-solid fa-circle-check"></i>
                         </span>
@@ -152,15 +138,30 @@
         </article>
         <article class="art_menu wrapper">
             <h4>DESSERTS</h4>
+            <input class="menu_choice input_checkbox" type="checkbox" id="choice_7" name="choice" value="entrees" />
+            <label for="choice_7">
+                <span class="menu">
+                    <span class="card">
+                        <strong class="card_title">Pétales de violettes glacés</strong>
+                        <em class="card_description">Et purée de noisettes</em>
+                    </span>
+                    <span class="price_check">
+                        <strong class="price">18€</strong>
+                        <span class="check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </span>
+                </span>
+            </label>
             <input class="menu_choice input_checkbox" type="checkbox" id="choice_8" name="choice" value="entrees" />
             <label for="choice_8">
                 <span class="menu">
                     <span class="card">
-                        <strong class="card_title">Macaron noisette et chocolat</strong>
-                        <em class="card_description">Glace au caramel brun et sel de Guérande</em>
+                        <strong class="card_title">Fondant au chocolat</strong>
+                        <em class="card_description">Revisité</em>
                     </span>
                     <span class="price_check">
-                        <strong class="price">18€</strong>
+                        <strong class="price">22€</strong>
                         <span class="check">
                             <i class="fa-solid fa-circle-check"></i>
                         </span>
@@ -171,23 +172,8 @@
             <label for="choice_9">
                 <span class="menu">
                     <span class="card">
-                        <strong class="card_title">Baba au rhum revisité</strong>
-                        <em class="card_description">Avec son coulis de citron</em>
-                    </span>
-                    <span class="price_check">
-                        <strong class="price">22€</strong>
-                        <span class="check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span>
-                    </span>
-                </span>
-            </label>
-            <input class="menu_choice input_checkbox" type="checkbox" id="choice_10" name="choice" value="entrees" />
-            <label for="choice_10">
-                <span class="menu">
-                    <span class="card">
-                        <strong class="card_title">Tarte au citron meringuée</strong>
-                        <em class="card_description">Déstructurée</em>
+                        <strong class="card_title">Millefeuille croustillant</strong>
+                        <em class="card_description">Myrtilles et pâte d’amande</em>
                     </span>
                     <span class="price_check">
                         <strong class="price">23€</strong>

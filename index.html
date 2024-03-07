@@ -22,12 +22,18 @@
                     <img class="logo" src="images/logo/ohmyfood@2x.svg" alt="ALC" />
                 </span>
             </nav>
-            <div class="location">
-                <i class="fa-solid fa-location-dot"></i>
-                <strong>Paris, Belleville</strong>
-            </div>
         </header>
         <main>
+            <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <label for="loca_choice"></label>
+                <span class="loca">
+                    <select name="location-choice" id="loca_choice">
+                        <option value="">Paris, Belleville</option>
+                        <option value="">New York, Brooklyn</option>
+                    </select>
+                </span>
+            </div>
             <div class="home_block">
                 <h1 class="">Réservez le menu qui vous convient</h1>
                 <p>Décrouvrez des restaurants d'exception, sélectionnés par nos soins</p>
@@ -62,7 +68,7 @@
                 </div>
             </div>
             <div class="main_block">
-                <h2>Restaurants</h2>
+                <h3>Restaurants</h3>
                 <div class="article_block">
                     <article class="article">
                         <a href="menu_01.html"><img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="ALC" /></a>
@@ -71,10 +77,13 @@
                                 <strong class="art_title">La palette du goût</strong>
                                 <em>Ménilmontant</em>
                             </span>
-                            <span class="heart_rate">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-heart"></i>
-                            </span>
+                            <input class="like_check input_checkbox" type="checkbox" id="like_1" name="like" value="like" />
+                            <label for="like_1">
+                                <span class="heart_rate">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                            </label>
                         </div>
                     </article>
                     <article class="article">
@@ -84,10 +93,13 @@
                                 <strong class="art_title">La note enchantée</strong>
                                 <em>Charonne</em>
                             </span>
-                            <span class="heart_rate">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-heart"></i>
-                            </span>
+                            <input class="like_check input_checkbox" type="checkbox" id="like_2" name="like" value="like" />
+                            <label for="like_2">
+                                <span class="heart_rate">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                            </label>
                         </div>
                     </article>
                     <article class="article">
@@ -97,10 +109,13 @@
                                 <strong class="art_title">À la française</strong>
                                 <em>Cité Rouge</em>
                             </span>
-                            <span class="heart_rate">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-heart"></i>
-                            </span>
+                            <input class="like_check input_checkbox" type="checkbox" id="like_3" name="like" value="like" />
+                            <label for="like_3">
+                                <span class="heart_rate">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                            </label>
                         </div>
                     </article>
                     <article class="article">
@@ -110,10 +125,13 @@
                                 <strong class="art_title">Le délice des sens</strong>
                                 <em>Folie-Méricourt</em>
                             </span>
-                            <span class="heart_rate">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-heart"></i>
-                            </span>
+                            <input class="like_check input_checkbox" type="checkbox" id="like_4" name="like" value="like" />
+                            <label for="like_4">
+                                <span class="heart_rate">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                            </label>
                         </div>
                     </article>
                 </div>
@@ -131,7 +149,10 @@
                     <a href=""><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
                 </li>
                 <li><a href="">Mentions légales</a></li>
-                <li><a href="">Contact</a></li>
+                <li>
+                    <input type="email" id="contact"/>
+                    <label class="contact_label" for="contact">Contact</label>
+                </li>
             </ul>
         </footer>
     </body>

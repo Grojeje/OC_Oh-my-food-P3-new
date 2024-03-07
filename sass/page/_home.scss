@@ -1,6 +1,32 @@
 body{
     background-color: #F6F6F6;
 }
+.main_block {
+    margin-inline: 15px;
+}
+
+/*-------------------Location-----------------*/
+
+.location {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAEAEA;
+
+    .fa-location-dot {
+        padding-inline-end: 10px;
+    }
+    .loca {
+        overflow: hidden;
+        width: 140px;
+        select {
+            border: none;
+            border-radius: 5px;
+            background-color: #EAEAEA;
+        }
+    }
+}
 
 /*-------------------Home_block-----------------*/
 
@@ -59,6 +85,10 @@ body{
 
 /*-----------------Articles----------------*/
 
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
 .article {
     margin-block: 10px;
 }

@@ -1,11 +1,21 @@
 .wrapper {
-    padding-inline: 10px;
+    padding-inline: 15px;
 }
 
 /*--------------------Header_menu--------------*/
 
 .background {
+    overflow: hidden;
+    height: 275px;
+    .background_img {
         width: 100%;
+        height: 275px;
+    }
+    .img {
+        position: relative;
+        height: auto;
+        top: -90px;
+    }
 }
 
 /*--------------------Main_menu--------------*/

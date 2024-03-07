@@ -90,15 +90,16 @@ h2 {
         align-items: center;
         padding-inline: 10px;
         .art_txt {
+            display: flex;
+            flex-flow: column;
             padding-top: 10px;
         }
         .art_title {
             font-size: 18px;
             font-weight: 700;
         }
-        p {
-            font-size: 17px;
-            margin: 0;
+        em {
+            font-style: normal;
         }
     }
 }
@@ -133,7 +134,7 @@ h2 {
 
 /*-----------------menu------------------*/
 
-h3 {
+h4 {
     display: flex;
     justify-content: space-between;
     border-top-left-radius: 30px;
@@ -144,21 +145,22 @@ h3 {
     margin-top: -30px;
     background: #f6f6f6;
     font-size: 28px;
+    font-weight: 400;
 }
-h4 {
+h5 {
     margin-bottom: 0px;
     font-size: 16px;
     font-weight: 300;
     position: relative;
     padding-bottom: 10px;
 }
-h4::before {
+h5::before {
     position: absolute;
     width: 40px;
     height: 2px;
     content: "";
 }
-h4::before {
+h5::before {
     left: 0;
     bottom: 0;
     border-bottom: solid 3px $Greenlight;
