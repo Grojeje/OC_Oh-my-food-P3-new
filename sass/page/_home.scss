@@ -3,6 +3,7 @@ body{
 }
 .main_block {
     margin-inline: 15px;
+    margin-bottom: 100px;
 }
 
 /*-------------------Location-----------------*/
@@ -66,21 +67,6 @@ body{
     display: flex;
     flex-flow: column;
     justify-content: center;
-}
-
-.explain_btn_block {
-        display: flex;
-        flex-flow: nowrap;
-        align-items: baseline;
-        margin-block: 30px;
-    em {
-        position: relative;
-    }
-    .explain_btn {
-        i:active {
-            color: $colorPrimary;
-        }
-    }
 }
 
 /*-----------------Articles----------------*/

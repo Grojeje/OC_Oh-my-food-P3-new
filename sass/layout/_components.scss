@@ -15,11 +15,12 @@
     border-radius: 50px;
     height: 50px;
     width: 218px;
-    background: linear-gradient(to right bottom, $colorSecondary, $colorPrimary);
+    background: linear-gradient(to right bottom, $color-secondary, $color-primary);
     border: none;
     box-shadow: 2px 2px 2px 2px #e9e9e9;
     span {
-        position: relative;
+        display: flex;
+        justify-content: center;
         padding-block: 15px;
         color: white;
         padding-inline: 10px;
@@ -36,71 +37,109 @@
 h2 {
     margin-bottom: 0;
 }
-.explain_btn_block {
-    em {
-        display: flex;
-        justify-content: center;
-        height: 25px;
-        width: 25px;
-        margin-inline: 5px;
-        font-size: 17px;
-        font-style: normal;
-        background-color: $colorPrimary;
-        border-radius: 50%;
-        color: white;
-        padding-top: 2px;
-        margin: 0px;
-        margin-inline-end: -10px;
-        position: relative;
-    }
+.explain_block {
+    padding-inline: 20px;
+    background-color: white;
+    height: 440px;
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
     .explain_btn {
-        display: grid;
-        grid-template-columns: 25% 75%;
+        display: flex;
         align-items: center;
-        justify-content: center;
         background-color: #f7f7f7;
         height: 72px;
         border-radius: 15px;
         border: none;
         box-shadow: 2px 2px 2px 2px #e9e9e9;
         width: 100%;
-    }
-    strong {
-        display: flex;
+        .numbers {
+            position: relative;
+            left: -10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            height: 24px;
+            width: 24px;
+            background: $color-primary;
+            color: white;
+            font-style: normal;
+        }
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 18px;
+            width: 18px;
+            margin-inline: 15px;
+        }
+        &:focus,
+        &:hover {
+            .icon {
+                color: $color-primary;
+            }
+        }
     }
 }
 
 /*-------------------------Articles--------------------*/
 
 .article {
+    display: grid;
+    grid-template-rows: 75% 25%;
     background-color: #ffffff;
     height: 250px;
     border-radius: 15px;
-    box-shadow: 4px 4px 4px 4px $colorBoxshadowPrimary;
+    box-shadow: 4px 4px 4px 4px $color-boxshadow-primary;
+    a:visited {
+        color: $color-new-card;
+    }
+}
+.img_container {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    .new {
+        @include disflexcenter;
+        position: relative;
+        top: -175px;
+        left: 300px;
+        width: 80px;
+        height: 23px;
+        font-size: 14px;
+        font-weight: 500;
+        color: $color-new-card;
+        background: $color-tertiary;
+    }
     img {
+        position: relative;
         object-fit: cover;
         width: 100%;
-        height: 75%;
+        height: 187px;
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
-    }
-    .art_txt_block {
+    }  
+}
+.art_txt_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 10px;
+
+    .art_txt {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-inline: 10px;
-        .art_txt {
-            display: flex;
-            flex-flow: column;
-            padding-top: 10px;
-        }
-        .art_title {
-            font-size: 18px;
-            font-weight: 700;
-        }
-        em {
-            font-style: normal;
-        }
+        flex-flow: column;
+        padding-top: 10px;
+    }
+
+    .art_title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .art_description {
+        font-style: normal;
     }
 }
 .heart_rate {
@@ -128,7 +167,7 @@ h2 {
 .like_check:checked + label {
     .fa-solid {
         opacity: 1;
-        color: $colorPrimary;
+        color: $color-primary;
     }
 }
 
@@ -163,7 +202,7 @@ h5::before {
 h5::before {
     left: 0;
     bottom: 0;
-    border-bottom: solid 3px $Greenlight;
+    border-bottom: solid 3px $color-tertiary;
 }
 .input_checkbox {
     display: none;
@@ -214,7 +253,7 @@ h5::before {
             width: 60px;
             height: 70px;
             margin-right: -75px;
-            background: $Greenlight;
+            background: $color-tertiary;
             transition: transform 250ms;
             i {
                 font-size: 20px;
