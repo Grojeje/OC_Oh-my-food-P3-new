@@ -1,14 +1,52 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+/* box-sizing est appliqué à tous les éléments */
 
-/*import du font depuis google font*/
 * {
     box-sizing: border-box;
-    /* box-sizing est appliqué à tous les éléments */
     font-family: $Text;
 }
+
+/*----------------------------Text&titles----------------------------*/
+
 a {
     text-decoration: none;
 }
+h2 {
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
 h4 {
     font-family: $Logo_title;
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-block: 0;
+    padding-top: 30px;
+    position: relative;
+    margin-top: -30px;
+    background: #f6f6f6;
+    font-size: 28px;
+    font-weight: 400;
+}
+h5 {
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 300;
+    position: relative;
+    padding-bottom: 10px;
+}
+h5::before {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    content: "";
+}
+h5::before {
+    left: 0;
+    bottom: 0;
+    border-bottom: solid 3px $color-tertiary;
 }
