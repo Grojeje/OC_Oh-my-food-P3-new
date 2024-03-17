@@ -1,3 +1,16 @@
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #fff;
+    border-bottom-color: #9356DC;
+    border-radius: 50%;
+    display: inline-block;
+    animation: rotation 1s linear 2 both;
+    position: absolute;
+    left: 45%;
+    top: 50%;
+}
+
 /*-----------header------------*/
 
 .back {
@@ -29,6 +42,9 @@
 .cmd_btn {
     input {
         color: white;
+    }
+    &:active {
+        opacity: 0.8;
     }
 }
 
@@ -73,6 +89,7 @@ h2 {
             height: 18px;
             width: 18px;
             margin-inline: 15px;
+            color: $color-hover-button-primary;
         }
         &:focus,
         &:hover {
@@ -100,11 +117,13 @@ h2 {
     overflow: hidden;
     height: 100%;
     width: 100%;
+    display: grid;
     .new {
         @include disflexcenter;
+        justify-self: flex-end;
         position: relative;
         top: -175px;
-        left: 300px;
+        right: 13px;
         width: 80px;
         height: 23px;
         font-size: 14px;
@@ -244,7 +263,7 @@ h5::before {
             display: flex;
             align-items: flex-end;
             height: 42px;
-            padding-inline: 10px;
+            padding-right: 10px;
             transition: transform 250ms;
         }
         .check {

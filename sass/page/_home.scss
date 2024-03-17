@@ -1,6 +1,9 @@
 body{
     background-color: #F6F6F6;
 }
+.delay {
+    animation: 2s ease 0s normal forwards 1 display;
+}
 .main_block {
     margin-inline: 15px;
     margin-bottom: 100px;
@@ -71,6 +74,11 @@ body{
 
 /*-----------------Articles----------------*/
 
+.article_block {
+    display: flex;
+    gap: 10px;
+    flex-flow: column;
+}
 h3 {
     font-size: 24px;
     font-weight: 700;
