@@ -70,13 +70,28 @@ $Logo_title : Shrikhand, sans-serif;
 
 @keyframes display {
     0% {
+        top: 15px;
         opacity: 0;
     }
 
-    66% {
+    50% {
+        top: 10px;
         opacity: 0;
     }
 
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes showmenu {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
     100% {
         opacity: 1;
     }

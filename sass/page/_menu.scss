@@ -21,10 +21,24 @@
 /*--------------------Main_menu--------------*/
 
 .art_menu {
+    position: relative;
     display: flex;
     flex-flow: column;
     gap: 15px;
     margin-bottom: 20px;
+    animation: 1s both display;
+}
+
+.delay1 {
+    animation-delay: 0.5s;
+}
+
+.delay2 {
+    animation-delay: 1s;
+}
+
+.delay3 {
+    animation-delay: 1.5s;
 }
 
 /*--------------------CMD_BTN--------------*/

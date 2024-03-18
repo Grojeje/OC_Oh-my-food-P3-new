@@ -194,6 +194,7 @@
 }
 .menu {
     display: flex;
+    position: relative;
     border-radius: 15px;
     border: none;
     height: 69px;
@@ -203,6 +204,7 @@
     padding-block: 0;
     justify-content: space-between;
     overflow: hidden;
+    animation: 0.2s ease-in-out both 2s showmenu;
     .card {
         display: flex;
         flex-flow: column;
