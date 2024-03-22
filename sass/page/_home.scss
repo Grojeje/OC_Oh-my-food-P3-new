@@ -1,6 +1,9 @@
 body{
     background-color: #F6F6F6;
 }
+.home_wrapper {
+    justify-content: center;
+}
 .delay {
     animation: 2s ease 0s normal forwards 1 display;
 }
@@ -53,6 +56,7 @@ body{
 }
 
 /*---------------Explain_block--------------*/
+
 .explain_block {
     padding-inline: 20px;
     background-color: white;
@@ -60,6 +64,11 @@ body{
     display: flex;
     flex-flow: column;
     justify-content: center;
+}
+.explain_btn_block {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
 }
 
 /*-----------------Articles----------------*/
@@ -71,4 +80,47 @@ body{
 }
 .article {
     margin-block: 10px;
+}
+
+/*-----------------Media-queries----------------*/
+
+@media all and (min-width: 426px) and  (max-width: 768px) {
+    .home_wrapper {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .explain_block {
+    padding-inline: 20px;
+    background-color: white;
+    height: 440px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+    .explain_btn_block {
+        display: flex;
+        flex-flow: column;
+        gap: 20px;
+        .explain_btn {
+            width: 335px;
+        }
+    }
+}
+
+
+@media all and (min-width: 769px) {
+    .home_wrapper {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+        }
+    .explain_btn_block {
+        display: flex;
+        flex-flow: row;
+        gap: 20px;
+        .explain_btn {
+            width: 335px;
+        }
+    }
 }
