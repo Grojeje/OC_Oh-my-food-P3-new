@@ -122,7 +122,6 @@
         background: $color-tertiary;
     }
     img {
-        position: relative;
         object-fit: cover;
         width: 100%;
         height: 187px;
@@ -141,12 +140,10 @@
         flex-flow: column;
         padding-top: 10px;
     }
-
     .art_title {
         font-size: 18px;
         font-weight: 700;
     }
-
     .art_description {
         font-style: normal;
     }
@@ -158,15 +155,12 @@
     width: 25px;
     align-items: center;
     padding-right: 20px;
-
     i {
         font-size: 25px;
     }
-
     .fa-regular {
         position: relative;
     }
-
     .fa-solid {
         position: absolute;
         opacity: 0;

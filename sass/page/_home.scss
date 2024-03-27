@@ -69,6 +69,7 @@ body{
     display: flex;
     flex-flow: column;
     gap: 20px;
+    align-items: center;
 }
 
 /*-----------------Articles----------------*/
@@ -111,10 +112,10 @@ body{
 
 @media all and (min-width: 769px) {
     .home_wrapper {
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-        }
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
     .explain_btn_block {
         display: flex;
         flex-flow: row;
@@ -122,5 +123,19 @@ body{
         .explain_btn {
             width: 335px;
         }
+    }
+    .article_block {
+        justify-content: center;
+        flex-flow: wrap;
+    }
+    .article {
+        width: 360px;
+    }
+}
+
+
+@media all and (min-width: 1024px) {
+    .article {
+        width: 480px;
     }
 }
