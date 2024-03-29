@@ -36,3 +36,19 @@ footer {
         }
     }
 }
+
+@media all and (min-width: 1024px) {
+    footer {
+        flex-direction: row-reverse;
+        align-items: center;
+        height: 114px;
+        img {
+            margin: 0;
+        }
+        ul {
+            display: flex;
+            gap: 15px;
+            padding-right: 100px;
+        }
+    }
+}

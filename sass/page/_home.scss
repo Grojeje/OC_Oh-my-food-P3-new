@@ -92,12 +92,11 @@ body{
         justify-content: center;
     }
     .explain_block {
-    padding-inline: 20px;
-    background-color: white;
-    height: 440px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+        padding-inline: 20px;
+        background-color: white;
+        height: 440px;
+        display: flex;
+        flex-flow: column;
 }
     .explain_btn_block {
         display: flex;
@@ -118,6 +117,7 @@ body{
     }
     .explain_btn_block {
         display: flex;
+        justify-content: center;
         flex-flow: row;
         gap: 20px;
         .explain_btn {
