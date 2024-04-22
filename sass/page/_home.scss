@@ -1,15 +1,8 @@
 body{
     background-color: #F6F6F6;
 }
-.home_wrapper {
-    justify-content: center;
-}
 .delay {
     animation: 2s ease 0s normal forwards 1 display;
-}
-.main_block {
-    margin-inline: 15px;
-    margin-bottom: 100px;
 }
 
 /*-------------------Location-----------------*/
@@ -45,6 +38,9 @@ body{
     &:active {
         opacity: 85%;
     }
+    .home_title {
+        text-align: center;
+    }
     p {
         text-align: center;
         font-size: 18px;
@@ -63,19 +59,25 @@ body{
     height: 440px;
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    justify-content: center;align-items: center
 }
 .explain_btn_block {
-    display: flex;
+    @include disflexcenter;
     flex-flow: column;
     gap: 20px;
-    align-items: center;
 }
 
 /*-----------------Articles----------------*/
 
+.main_block {
+    display: flex;
+    justify-content: center;
+    margin-inline: 15px;
+    margin-bottom: 100px;
+}
 .article_block {
     display: flex;
+    justify-content: center;
     gap: 10px;
     flex-flow: column;
 }
@@ -85,57 +87,33 @@ body{
 
 /*-----------------Media-queries----------------*/
 
-@media all and (min-width: 426px) and  (max-width: 768px) {
-    .home_wrapper {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-    }
+@media all and (min-width: 1024px) {
     .explain_block {
-        padding-inline: 20px;
-        background-color: white;
-        height: 440px;
-        display: flex;
-        flex-flow: column;
-}
-    .explain_btn_block {
-        display: flex;
-        flex-flow: column;
-        gap: 20px;
-        .explain_btn {
-            width: 335px;
-        }
-    }
-}
-
-
-@media all and (min-width: 769px) {
-    .home_wrapper {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
+        height: 230px;
     }
     .explain_btn_block {
-        display: flex;
-        justify-content: center;
-        flex-flow: row;
-        gap: 20px;
-        .explain_btn {
-            width: 335px;
-        }
-    }
-    .article_block {
-        justify-content: center;
         flex-flow: wrap;
     }
-    .article {
-        width: 360px;
+    .home_wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .article_wrapper {
+        width: 940px;
+    }
+    .article_block {
+        justify-content: space-between;
+        flex-flow: wrap;
     }
 }
-
-
-@media all and (min-width: 1024px) {
-    .article {
-        width: 480px;
+@media all and (min-width: 1440px) {
+    .explain_btn_block {
+        gap: 77px;
+    }
+    .article_wrapper {
+        width: 1080px;
+    }
+    .article_block {
+        gap: 50px;
     }
 }

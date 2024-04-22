@@ -42,8 +42,11 @@ footer {
         flex-direction: row-reverse;
         align-items: center;
         height: 114px;
-        img {
-            margin: 0;
+        span {
+            margin-right: 30px;
+            img {
+                    margin: 0;
+                }
         }
         ul {
             display: flex;
