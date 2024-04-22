@@ -162,6 +162,12 @@
         opacity: 0;
         transition: all 150ms linear;
     }
+    &:hover {
+        .fa-solid {
+            opacity: 1;
+            color: $color-primary;
+        }
+    }
 }
 .like_check:checked + label {
     .fa-solid {
