@@ -1,5 +1,5 @@
-body{
-    background-color: #F6F6F6;
+body {
+    background-color: #f6f6f6;
 }
 .delay {
     animation: 2s ease 0s normal forwards 1 display;
@@ -12,7 +12,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
 
     .fa-location-dot {
         padding-inline-end: 10px;
@@ -23,7 +23,7 @@ body{
         select {
             border: none;
             border-radius: 5px;
-            background-color: #EAEAEA;
+            background-color: #eaeaea;
         }
     }
 }
@@ -59,7 +59,8 @@ body{
     height: 440px;
     display: flex;
     flex-flow: column;
-    justify-content: center;align-items: center
+    justify-content: center;
+    align-items: center;
 }
 .explain_btn_block {
     @include disflexcenter;
@@ -69,10 +70,17 @@ body{
 
 /*-----------------Articles----------------*/
 
+.article_wrapper {
+    width: 490px;
+    margin-inline: 15px;
+}
+.home_wrapper {
+    display: flex;
+    justify-content: center;
+}
 .main_block {
     display: flex;
     justify-content: center;
-    margin-inline: 15px;
     margin-bottom: 100px;
 }
 .article_block {
@@ -94,10 +102,7 @@ body{
     .explain_btn_block {
         flex-flow: wrap;
     }
-    .home_wrapper {
-        display: flex;
-        justify-content: center;
-    }
+
     .article_wrapper {
         width: 940px;
     }
