@@ -1,5 +1,6 @@
 .wrapper {
-    padding-inline: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 /*--------------------Header_menu--------------*/
@@ -20,12 +21,37 @@
 
 /*--------------------Main_menu--------------*/
 
+h4 {
+    font-family: $Logo_title;
+    font-size: 28px;
+}
+h5 {
+    border-bottom: solid;
+    width: 34px;
+    border-color: $color-tertiary;
+}
+.menu_title {
+    @include disflexcenter;
+    gap: 20px;
+}
+.menu_wrapper {
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: relative;
+    bottom: 40px;
+    background: #F6F6F6;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
 .art_menu {
     position: relative;
     display: flex;
     flex-flow: column;
     gap: 15px;
     margin-bottom: 20px;
+    margin-inline: 10px;
     animation: 1s both display;
 }
 
@@ -46,4 +72,17 @@
 .cmd_btn {
     margin-block: 50px;
     @include disflexcenter;
+}
+
+/*--------------------Media_queries--------------*/
+
+@media all and (min-width: 768px) {
+    .art_menu {
+        width: 634px;
+    }
+}
+@media all and (min-width: 1440px) {
+    .menu_wrapper {
+        width: 1055px;
+    }
 }
