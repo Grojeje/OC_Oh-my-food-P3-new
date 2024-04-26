@@ -38,12 +38,17 @@
         color: white;
         padding-inline: 10px;
     }
+    &:active,
+    &:hover {
+        opacity: 0.8;
+    }
 }
 .cmd_btn {
     input {
         color: white;
     }
-    &:active {
+    &:active,
+    &:hover {
         opacity: 0.8;
     }
 }
@@ -92,6 +97,7 @@
 /*-------------------------Articles--------------------*/
 
 .article {
+    position: relative;
     display: grid;
     grid-template-rows: 75% 25%;
     background-color: #ffffff;
@@ -110,6 +116,9 @@
     display: grid;
     .new {
         @include disflexcenter;
+        position: absolute;
+        top: 15px;
+        right: 15px;
         justify-self: flex-end;
         width: 80px;
         height: 23px;
@@ -165,7 +174,7 @@
     &:hover {
         .fa-solid {
             opacity: 1;
-            color: $color-primary;
+            color: linear-gradient(to right bottom, $color-secondary, $color-primary);
         }
     }
 }
@@ -237,6 +246,17 @@
             }
         }
     }
+}
+.menu_delay1 {
+    animation-delay: 1s;
+}
+
+.menu_delay2 {
+    animation-delay: 1.3s;
+}
+
+.menu_delay3 {
+    animation-delay: 1.5s;
 }
 .menu_choice:checked + label {
     .card_title {

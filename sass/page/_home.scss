@@ -1,6 +1,3 @@
-body {
-    background-color: #f6f6f6;
-}
 .delay {
     animation: 2s ease 0s normal forwards 1 display;
 }
@@ -13,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #eaeaea;
-
+    box-shadow: 4px 4px 4px 4px $color-boxshadow-primary;
     .fa-location-dot {
         padding-inline-end: 10px;
     }
@@ -35,6 +32,7 @@ body {
     flex-flow: column;
     align-items: center;
     height: 287px;
+    background: #F6F6F6;
     &:active {
         opacity: 85%;
     }
@@ -77,6 +75,7 @@ body {
 .home_wrapper {
     display: flex;
     justify-content: center;
+    background: #F6F6F6;
 }
 .main_block {
     display: flex;
