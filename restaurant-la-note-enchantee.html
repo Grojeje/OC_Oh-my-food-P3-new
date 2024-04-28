@@ -1,224 +1,211 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
-    <title>Ohmyfood</title>
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <span class="back"><a href="index.html"><i class="fa-solid fa-arrow-left"></i></a></span>
-            <span id="logo">
-                <img class="logo" src="images/logo/ohmyfood@2x.svg" alt="ALC" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+        <title>Ohmyfood</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <span class="back"
+                    ><a href="index.html"><i class="fa-solid fa-arrow-left"></i></a
+                ></span>
+                <span id="logo">
+                    <img class="logo" src="images/logo/ohmyfood@2x.svg" alt="ALC" />
+                </span>
+            </nav>
+        </header>
+        <main>
+            <div class="background">
+                <img class="background_img img" src="images/restaurants/restaurant-la-note-enchantee.jpg" alt="ALC" />
+            </div>
+            <div class="wrapper">
+                <div class="menu_wrapper">
+                    <div class="menu_title">
+                        <h4>La note enchantée</h4>
+                        <input class="like_check input_checkbox" type="checkbox" id="like" name="like" value="like" />
+                        <label for="like">
+                            <span class="heart_rate">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </span>
+                        </label>
+                    </div>
+                    <article class="art_menu delay1">
+                        <h5>ENTRÉES</h5>
+                        <input class="menu_choice input_checkbox" type="checkbox" id="choice_1" name="choice" value="entrees" />
+                        <label for="choice_1">
+                            <span class="menu menu_delay1">
+                                <span class="card">
+                                    <strong class="card_title">Fricassée d'escargots</strong>
+                                    <em class="card_description">Au piment d'Espelette</em>
+                                </span>
+                                <span class="price_check">
+                                    <strong class="price">25€</strong>
+                                    <span class="check">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </span>
+                                </span>
+                            </span>
+                        </label>
+                        <input class="menu_choice input_checkbox" type="checkbox" id="choice_2" name="choice" value="entrees" />
+                        <label for="choice_2">
+                            <span class="menu menu_delay2">
+                                <span class="card">
+                                    <strong class="card_title">Foie gras de canard mi-cuit</strong>
+                                    <em class="card_description">Et ses copeaux de truffe noire</em>
+                                </span>
+                                <span class="price_check test1">
+                                    <strong class="price">35€</strong>
+                                    <span class="check">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </span>
+                                </span>
+                            </span>
+                        </label>
+                        <input class="menu_choice input_checkbox" type="checkbox" id="choice_3" name="choice" value="entrees" />
+                        <label for="choice_3">
+                            <span class="menu menu_delay3">
+                                <span class="card">
+                                    <strong class="card_title">Œuf au plat</strong>
+                                    <em class="card_description">Assaisonné à la truffe sur lit de caviar</em>
+                                </span>
+                                <span class="price_check">
+                                    <strong class="price">20€</strong>
+                                    <span class="check">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </span>
+                                </span>
+                            </span>
+                        </label>
+                    </article>
+                    <article class="art_menu delay2">
+                        <h5>PLATS</h5>
+                        <input class="menu_choice input_checkbox" type="checkbox" id="choice_4" name="choice" value="entrees" />
+                        <label for="choice_4">
+                            <span class="menu menu_delay1">
+                                <span class="card">
+                                    <strong class="card_title">Filet de bœuf aux herbes</strong>
+                                    <em class="card_description">Accompagné de sa ribambelle de légumes</em>
+                                </span>
+                                <span class="price_check">
+                                    <strong class="price">40€</strong>
+                                    <span class="check">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </span>
+                                </span>
+                            </span>
+                        </label>
+                        <input class="menu_choice input_checkbox" type="checkbox" id="choice_5" name="choice" value="entrees" />
+                        <label for="choice_5">
+                            <span class="menu menu_delay2">
+                                <span class="card">
+                                    <strong class="card_title">Parmentier de queue de bœuf</strong>
+                                    <em class="card_description">À la truffe noire sur sa purée de panais</em>
+                                </span>
+                                <span class="price_check">
+                                    <strong class="price">35€</strong>
+                                    <span class="check">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </span>
+                                </span>
+                            </span>
+                        </label>
+                        <input class="menu_choice input_checkbox" type="checkbox" id="choice_6" name="choice" value="entrees" />
+                        <label for="choice_6">
+                            <span class="menu menu_delay3">
+                                <span class="card">
+                                    <strong class="card_title">Filet de turbot</strong>
+                                    <em class="card_description">Aux agrumes</em>
+                                </span>
+                                <span class="price_check">
+                                    <strong class="price">44€</strong>
+                                    <span class="check">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </span>
+                                </span>
+                            </span>
+                        </label>
+                    </article>
+                    <article class="art_menu delay3">
+                        <h5>DESSERTS</h5>
+                        <input class="menu_choice input_checkbox" type="checkbox" id="choice_7" name="choice" value="entrees" />
+                        <label for="choice_7">
+                            <span class="menu menu_delay1">
+                                <span class="card">
+                                    <strong class="card_title">Paris-Brest</strong>
+                                    <em class="card_description">Revisité</em>
+                                </span>
+                                <span class="price_check">
+                                    <strong class="price">18€</strong>
+                                    <span class="check">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </span>
+                                </span>
+                            </span>
+                        </label>
+                        <input class="menu_choice input_checkbox" type="checkbox" id="choice_8" name="choice" value="entrees" />
+                        <label for="choice_8">
+                            <span class="menu menu_delay2">
+                                <span class="card">
+                                    <strong class="card_title">Macaron au chocolat d'exception</strong>
+                                    <em class="card_description">Et glace à la vanille de Madagascar</em>
+                                </span>
+                                <span class="price_check">
+                                    <strong class="price">22€</strong>
+                                    <span class="check">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </span>
+                                </span>
+                            </span>
+                        </label>
+                        <input class="menu_choice input_checkbox" type="checkbox" id="choice_9" name="choice" value="entrees" />
+                        <label for="choice_9">
+                            <span class="menu menu_delay3">
+                                <span class="card">
+                                    <strong class="card_title">Mousse au chocolat</strong>
+                                    <em class="card_description">Au piment d'Espelette et à la truffe noire</em>
+                                </span>
+                                <span class="price_check">
+                                    <strong class="price">23€</strong>
+                                    <span class="check">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </span>
+                                </span>
+                            </span>
+                        </label>
+                    </article>
+                    <div class="cmd_btn">
+                        <label>
+                            <input class="home_btn" type="submit" value="Commander" />
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <span>
+                <img src="images/logo/ohmyfood@2x.svg" alt="ALC" />
             </span>
-        </nav>
-    </header>
-    <main>
-        <div class="background">
-            <img class="background_img img" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="ALC" />
-        </div>
-        <h4 class="wrapper">
-            La note enchantée
-            <input class="like_check input_checkbox" type="checkbox" id="like" name="like" value="like" />
-            <label for="like">
-                <span class="heart_rate">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-heart"></i>
-                </span>
-            </label>
-        </h4>
-        <article class="art_menu delay1 wrapper">
-            <h5>ENTRÉES</h5>
-            <input class="menu_choice input_checkbox" type="checkbox" id="choice_1" name="choice" value="entrees" />
-            <label for="choice_1">
-                <span class="menu">
-                    <span class="card">
-                        <strong class="card_title">Ravioles de foie gras</strong>
-                        <em class="card_description">Accompagnées de leur crème à la truffe</em>
-                    </span>
-                    <span class="price_check">
-                        <strong class="price">25€</strong>
-                        <span class="check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span>
-                    </span>
-                </span>
-            </label>
-            <input class="menu_choice input_checkbox" type="checkbox" id="choice_2" name="choice" value="entrees" />
-            <label for="choice_2">
-                <span class="menu">
-                    <span class="card">
-                        <strong class="card_title">Caviar osciètre</strong>
-                        <em class="card_description">Sur blini à la farine de blé noir</em>
-                    </span>
-                    <span class="price_check">
-                        <strong class="price">35€</strong>
-                        <span class="check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span>
-                    </span>
-                </span>
-            </label>
-            <input class="menu_choice input_checkbox" type="checkbox" id="choice_3" name="choice" value="entrees" />
-            <label for="choice_3">
-                <span class="menu">
-                    <span class="card">
-                        <strong class="card_title">Homard et espuma de potiron</strong>
-                        <em class="card_description">Marinés aux zestes d'orange</em>
-                    </span>
-                    <span class="price_check">
-                        <strong class="price">20€</strong>
-                        <span class="check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span>
-                    </span>
-                </span>
-            </label>
-            <input class="menu_choice input_checkbox" type="checkbox" id="choice_4" name="choice" value="entrees" />
-            <label for="choice_4">
-                <span class="menu">
-                    <span class="card">
-                        <strong class="card_title">Foie gras de canard cuit entier</strong>
-                        <em class="card_description">Confiture de figue et pain toasté</em>
-                    </span>
-                    <span class="price_check">
-                        <strong class="price">35€</strong>
-                        <span class="check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span>
-                    </span>
-                </span>
-            </label>
-        </article>
-        <article class="art_menu delay2 wrapper">
-            <h5>PLATS</h5>
-            <input class="menu_choice input_checkbox" type="checkbox" id="choice_5" name="choice" value="entrees" />
-            <label for="choice_5">
-                <span class="menu">
-                    <span class="card">
-                        <strong class="card_title">Noix de coquilles Saint-Jacques</strong>
-                        <em class="card_description">Sur lit de purée de céleri-rave</em>
-                    </span>
-                    <span class="price_check">
-                        <strong class="price">40€</strong>
-                        <span class="check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span>
-                    </span>
-                </span>
-            </label>
-            <input class="menu_choice input_checkbox" type="checkbox" id="choice_6" name="choice" value="entrees" />
-            <label for="choice_6">
-                <span class="menu">
-                    <span class="card">
-                        <strong class="card_title">Langoustine poêlée</strong>
-                        <em class="card_description">Purée de patate douce</em>
-                    </span>
-                    <span class="price_check">
-                        <strong class="price">35€</strong>
-                        <span class="check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span>
-                    </span>
-                </span>
-            </label>
-            <input class="menu_choice input_checkbox" type="checkbox" id="choice_7" name="choice" value="entrees" />
-            <label for="choice_7">
-                <span class="menu">
-                    <span class="card">
-                        <strong class="card_title">Mijoté de queue de bœuf</strong>
-                        <em class="card_description">Et riz sauvage aux zestes de citron</em>
-                    </span>
-                    <span class="price_check">
-                        <strong class="price">45€</strong>
-                        <span class="check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span>
-                    </span>
-                </span>
-            </label>
-        </article>
-        <article class="art_menu delay3 wrapper">
-            <h5>DESSERTS</h5>
-            <input class="menu_choice input_checkbox" type="checkbox" id="choice_8" name="choice" value="entrees" />
-            <label for="choice_8">
-                <span class="menu">
-                    <span class="card">
-                        <strong class="card_title">Macaron noisette et chocolat</strong>
-                        <em class="card_description">Glace au caramel brun et sel de Guérande</em>
-                    </span>
-                    <span class="price_check">
-                        <strong class="price">18€</strong>
-                        <span class="check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span>
-                    </span>
-                </span>
-            </label>
-            <input class="menu_choice input_checkbox" type="checkbox" id="choice_9" name="choice" value="entrees" />
-            <label for="choice_9">
-                <span class="menu">
-                    <span class="card">
-                        <strong class="card_title">Baba au rhum revisité</strong>
-                        <em class="card_description">Avec son coulis de citron</em>
-                    </span>
-                    <span class="price_check">
-                        <strong class="price">22€</strong>
-                        <span class="check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span>
-                    </span>
-                </span>
-            </label>
-            <input class="menu_choice input_checkbox" type="checkbox" id="choice_10" name="choice" value="entrees" />
-            <label for="choice_10">
-                <span class="menu">
-                    <span class="card">
-                        <strong class="card_title">Tarte au citron meringuée</strong>
-                        <em class="card_description">Déstructurée</em>
-                    </span>
-                    <span class="price_check">
-                        <strong class="price">23€</strong>
-                        <span class="check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span>
-                    </span>
-                </span>
-            </label>
-        </article>
-        <div class="cmd_btn">
-            <label>
-                <input class="home_btn" type="submit" value="Commander" />
-            </label>
-        </div>
-    </main>
-    <footer>
-        <span>
-            <img src="images/logo/ohmyfood@2x.svg" alt="ALC" />
-        </span>
-        <ul>
-            <li>
-                <a href=""><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
-            </li>
-            <li>
-                <a href=""><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
-            </li>
-            <li><a href="">Mentions légales</a></li>
-            <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
-        </ul>
-    </footer>
-</body>
-
+            <ul>
+                <li>
+                    <a href=""><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+                </li>
+                <li><a href="">Mentions légales</a></li>
+                <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+            </ul>
+        </footer>
+    </body>
 </html>

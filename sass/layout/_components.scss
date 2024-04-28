@@ -174,7 +174,7 @@
     &:hover {
         .fa-solid {
             opacity: 1;
-            color: linear-gradient(to right bottom, $color-secondary, $color-primary);
+            color: $color-primary;
         }
     }
 }

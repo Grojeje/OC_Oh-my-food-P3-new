@@ -39,32 +39,12 @@ $Logo_title : Shrikhand, sans-serif;
 @keyframes rotation {
     0% {
         transform: rotate(0deg);
-        opacity: 0;
+        border-bottom-color: #9356dc;
     }
-    15% {
-        opacity: 0.3;
-    }
-    30% {
-        opacity: 0.6;
-    }
-    45% {
-        opacity: 0.8;
-    }
-    50% {
-        opacity: 1;
-    }
-    60% {
-        opacity: 0.8;
-    }
-    75% {
-        opacity: 0.6;
-    }
-    90% {
-        opacity:  0.3;
-    }
+
     100% {
         transform: rotate(360deg);
-        opacity: 0;
+        border-bottom-color: #ff79da;
     }
 }
 
